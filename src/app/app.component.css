@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+#bg {
+  background-image: url(src\assets\m.jpg);
+  
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 40px;
+  background-color: rgb(246, 248, 248);
+  text-align: right;
+  color: rgb(20, 20, 20);
+}

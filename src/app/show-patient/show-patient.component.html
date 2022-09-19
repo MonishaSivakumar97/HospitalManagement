@@ -1,0 +1,47 @@
+<div className="App">
+    <section id="home" class="hero-section">
+
+      <div class="container">
+       
+                <h4 style="text-align: center"> Patient Details</h4>
+
+                
+                <div class="table-wrapper">
+                  <input  type="text"  placeholder="Please Enter The Id" [(ngModel)]="patientId">
+                <button type="submit" (click)="getPatientDetails(patientId)">Submit</button>
+                  <table class="table" >
+                    <thead>
+                      <tr>
+                        <th>Patient Id</th>
+                        <th>Patient Name</th>
+                        <th>Consultation Date</th>
+                        <th>Visited Doctor</th>
+                        <th>Prescription</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngIf="patients" >
+                        <td>{{ patients.id}}</td>
+                        <td>{{ patients.name }}</td>
+                        <td>{{ patients.dateOfVisit }}</td>
+                        <td>{{ patients.visitedDoctor }}</td>
+                        <td>{{ patients.prescription }}</td>
+                       
+                      </tr>
+                    </tbody>
+  
+                    <tbody></tbody>
+                  </table>
+                  <button type="submit" (click)="back()">Back</button>
+                </div>
+                
+              </div>
+              
+  
+         
+    </section>
+  </div>
+  
+  
+  
